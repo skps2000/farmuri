@@ -3,6 +3,7 @@ package egovframework.com.config;
 import javax.annotation.PostConstruct;
 import javax.sql.DataSource;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -28,6 +29,7 @@ import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
  * </pre>
  *
  */
+@Slf4j
 @Configuration
 public class EgovConfigAppDatasource {
 
@@ -74,6 +76,10 @@ public class EgovConfigAppDatasource {
 		url = env.getProperty("Globals." + dbType + ".Url");
 		userName = env.getProperty("Globals." + dbType + ".UserName");
 		password = env.getProperty("Globals." + dbType + ".Password");
+
+		log.info("dbType: asdfasdfasdfasdf");
+		log.debug(className + " " + url + " " + userName + " " + password);
+
 	}
 
 	/**
