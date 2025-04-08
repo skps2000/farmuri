@@ -84,6 +84,15 @@
 			<artifactId>querydsl-jpa</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- QueryDSL APT 의존성 -->
+		<dependency>
+			<groupId>com.querydsl</groupId>
+			<artifactId>querydsl-apt</artifactId>
+<!--			<version>5.0.0</version> &lt;!&ndash; 적절한 버전으로 변경 &ndash;&gt;-->
+			<scope>provided</scope>
+		</dependency>
+
 		<dependency>
 			<groupId>com.querydsl</groupId>
 			<artifactId>querydsl-apt</artifactId>
@@ -214,11 +223,18 @@
             <version>1.2</version>
         </dependency>
 
+<!--		<dependency>-->
+<!--		    <groupId>org.apache.commons</groupId>-->
+<!--		    <artifactId>commons-dbcp2</artifactId>-->
+<!--			<version>2.12.0</version>-->
+<!--		</dependency>-->
+
 		<dependency>
-		    <groupId>org.apache.commons</groupId>
-		    <artifactId>commons-dbcp2</artifactId>
-			<version>2.12.0</version>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-dbcp2</artifactId>
+<!--			<version>2.0</version>-->
 		</dependency>
+
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
