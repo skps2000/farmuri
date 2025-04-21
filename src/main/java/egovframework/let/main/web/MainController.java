@@ -11,12 +11,12 @@ public class MainController {
     @GetMapping(value = "/index")
     public String index() {
 
-        return "/shopper/main/index";
+        return "shopper/main/index";
     }
 
     @GetMapping(value = "/sub1")
     public String index_sub01() {
-        return "index.html";
+        return "index";
     }
 
     @GetMapping(value = "/sub2")
