@@ -16,17 +16,18 @@ public class MainController {
 
     @GetMapping(value = "/sub1")
     public String index_sub01() {
-        return "/shopper/main/index";
+        return "/resources/templates/shopper/main/index.html";
     }
 
     @GetMapping(value = "/sub2")
     public String index_sub02() {
-        return "/index";
+        return "/shopper/main/index.html";
+
     }
 
     @GetMapping(value = "/sub3")
     public String index_sub03() {
-        return "/index.html";
+        return "/templates/shopper/main/index.html";
     }
 
 
