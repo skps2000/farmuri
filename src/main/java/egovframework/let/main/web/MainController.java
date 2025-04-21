@@ -19,19 +19,6 @@ public class MainController {
         return "index";
     }
 
-    @GetMapping(value = "/sub2")
-    public String index_sub02() {
-        return "index";
-
-    }
-
-    @GetMapping(value = "/sub3")
-    public String index_sub03() {
-        return "/templates/shopper/main/index.html";
-    }
-
-
-
 
 
 }
