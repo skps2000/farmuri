@@ -52,6 +52,10 @@ public class SecurityConfig {
             "/schedule/{schdulId}", //일정 상세조회
             "/image", //갤러리 이미지보기
 
+             //20250421
+             "/shopper/**", //
+
+
     };
 
     // 인증 예외 List
