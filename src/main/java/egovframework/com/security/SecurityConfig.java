@@ -52,9 +52,6 @@ public class SecurityConfig {
             "/schedule/{schdulId}", //일정 상세조회
             "/image", //갤러리 이미지보기
 
-//            "/shopper/index.html", //
-//            "/shopper/**/*", //index.html
-//            "/**/*",
     };
 
     // 인증 예외 List
@@ -67,11 +64,7 @@ public class SecurityConfig {
             "/etc/**",//사용자단의 회원약관,회원가입,사용자아이디 중복여부체크 URL허용
 
             //20250421 shopper
-//            "/shopper/index.html",//사용자단의 회원약관,회원가입,사용자아이디 중복여부체크 URL허용
-//            "/shopper/**/*",//사용자단의 회원약관,회원가입,사용자아이디 중복여부체크 URL허용
-//            "/shopper/index.html",//사용자단의 회원약관,회원가입,사용자아이디 중복여부체크 URL허용
             "/shopper/**",//사용자단의 회원약관,회원가입,사용자아이디 중복여부체크 URL허용
-//            "/**/*",//사용자단의 회원약관,회원가입,사용자아이디 중복여부체크 URL허용
 
             /* swagger*/
             "/v3/api-docs/**",
@@ -142,11 +135,6 @@ public class SecurityConfig {
                 .authorizeHttpRequests(authorize -> authorize
                 		.antMatchers("/members/**").hasRole("ADMIN") //ROLE_생략=자동으로 입력됨
                         .antMatchers(AUTH_WHITELIST).permitAll()
-                        //20250421 ADD ST
-//                        .antMatchers("/static/**").permitAll()
-//                        .antMatchers("/shopper/**").permitAll()
-                        //20250421 ADD ED
-
                         .antMatchers(HttpMethod.GET,AUTH_GET_WHITELIST).permitAll()
                         .anyRequest().authenticated()
                 ).sessionManagement((sessionManagement) ->
