@@ -6,8 +6,6 @@
 ![swagger](https://img.shields.io/badge/swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)  
 ![workflow](https://github.com/eGovFramework/egovframe-template-simple-backend/actions/workflows/maven.yml/badge.svg)
 
-※ 본 프로젝트는 기존 JSP 뷰 방식에서 벗어나 BackEnd와 FrontEnd를 분리하기 위한 예시 파일로 참고만 하시길 바랍니다.  
-
 ## 환경 설정
 
 프로젝트에서 사용된 환경 프로그램 정보는 다음과 같다.
@@ -21,7 +19,10 @@
 ### CLI 구동 방법
 
 ```bash
+mvn clean
+mvn install -Dmaven.test.skip=true
 mvn spring-boot:run
+
 ```
 
 ### IDE에서 BackEnd 구동 방법
@@ -47,6 +48,8 @@ mvn spring-boot:run
 
 현재 FrontEnd는 React 관련 예제로 구성되어 있다.
 [심플홈페이지FrontEnd](https://github.com/eGovFramework/egovframe-template-simple-react.git) 소스를 받아 구동한다.
+
+ > 20250421 :상기 FrontEnd 소스는 훗날 관리자페이지 구성을 위함임.
 
 ## 변경 사항
 
