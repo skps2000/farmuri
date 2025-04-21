@@ -55,7 +55,6 @@ public class SecurityConfig {
              //20250421
              "/shopper/**", //
 
-
     };
 
     // 인증 예외 List
